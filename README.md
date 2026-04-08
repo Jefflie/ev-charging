@@ -1,4 +1,4 @@
-# Multiclass KAN ev-charging
+# Multiclass KAN - EVSE Cyberattacks
 
 **Paper:** Interpretable Cyberattack Detection and Classification for Electric Vehicle Charging: A Multiclass Kolmogorov-Arnold Network Framework
 
