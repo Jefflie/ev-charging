@@ -32,8 +32,7 @@ git clone https://github.com/Jefflie/ev-charging.git
 cd ev-charging
 ```
 
-2. **Set up the virtual environment**
-Using `venv` virtual environment to install the required packages:
+2. **Set up the virtual environment**: Using `venv` virtual environment to install the required packages.
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
@@ -50,8 +49,7 @@ cd data
 python data_preprocessing.py
 ```
 
-5. **Training and experiments**
-Scripts for training, pruning, symbolic formula extraction, and testing can be found in the [multiclass_classification.ipynb](https://github.com/Jefflie/ev-charging/blob/main/src/multiclass_classification.ipynb) notebook.
+5. **Training and experiments**: Scripts for training, pruning, symbolic formula extraction, and testing can be found in the [multiclass_classification.ipynb](https://github.com/Jefflie/ev-charging/blob/main/src/multiclass_classification.ipynb) notebook.
 
 ## Dataset
 This project uses the **CICEVSE 2024** dataset, which contains 115,298 samples of EVSE power consumption measurements (shunt voltage, bus voltage, current, and power) recorded at 1 sample/second under both normal and attack conditions.
