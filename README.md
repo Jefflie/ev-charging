@@ -7,10 +7,6 @@ This repository contains the code and resources for a [Kolmogorov-Arnold Network
 
 <img src="overview_v2.png" alt="overview" width="600"/>
 
-**KAN architecture for multiclass attack detection module:**
-
-<img src="KAN_symbolic.png" alt="overview" width="400"/>
-
 ## Setup
 **Prerequisites:**
 ```
