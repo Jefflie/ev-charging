@@ -1,0 +1,8 @@
+bayesian-optimization==1.5.0
+kan==0.0.2
+numpy==1.25.2
+pykan==0.2.8
+scikit_learn==1.8.0
+seaborn==0.13.2
+torch==2.7.0+cu118
+tsai==0.4.1
