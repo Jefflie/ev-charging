@@ -5,7 +5,7 @@
 ## Overview
 This repository contains the code and resources for a [Kolmogorov-Arnold Network](https://github.com/KindXiaoming/pykan/tree/master) (KAN)-based framework for detecting and classifying cyberattacks on Electric Vehicle Supply Equipment (EVSE) using only local auxiliary power consumption measurements (voltage, current, and power). The model classifies five cyberattack scenarios based on the [CICEVSE 2024 dataset](https://www.unb.ca/cic/datasets/evse-dataset-2024.html): normal EVSE operation, denial-of-service, cryptojacking, backdoor, and reconnaissance attacks.
 
-<img src="overview.png" alt="overview" width="600"/>
+<img src="overview_v2.png" alt="overview" width="600"/>
 
 **KAN architecture for multiclass attack detection module:**
 
