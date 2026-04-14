@@ -188,12 +188,11 @@ def merge_and_modify_csv(input_files, output_file, mapping):
 
     print(f"Merged {len(input_files)} csv files into {output_file} with label mapping applied")
 
-def stratified_split_csv(file_path, test_ratio=0.2, seed=42):
+def stratified_split_csv(file_path, test_ratio=0.2):
     """
     Splits a CSV dataset into train and test sets, preserving class proportions.
     The last column is assumed to be the class label.
     """
-    np.random.seed(seed)
 
     # Read entire CSV
     with open(file_path, 'r', newline='') as f:
