@@ -46,7 +46,7 @@ pip install -r requirements.txt
 4. **Preprocess the dataset**
 ```bash
 cd data
-python data_preprocessing.py
+python data_preprocessing_new.py
 ```
 
 5. **Training and experiments**: Scripts for training, pruning, symbolic formula extraction, and testing can be found in the [multiclass_classification.ipynb](https://github.com/Jefflie/ev-charging/blob/main/src/multiclass_classification.ipynb) notebook.
@@ -58,7 +58,7 @@ This project uses the **CICEVSE 2024** dataset, which contains 115,298 samples o
 
 A copy of the power consumption measurement dataset can be found at [EVSE-B-PowerCombined.csv](https://github.com/Jefflie/ev-charging/blob/main/data/EVSE-B-PowerCombined.csv) along with its readme [CICEVSE2024_readme.txt](https://github.com/Jefflie/ev-charging/blob/main/data/CICEVSE2024_readme.txt).
 
-Before using the data as input to the KAN model, we aggregate the four power measurements using an n-sample sliding time window with stride length 1 to extract three time-series features for each measurement: mean, variance, and range; for a total of **12 input features**. The datasets with these features are extracted using `data/data_preprocessing.py`, and the datasets themselves can be found at `data/merged1_train.csv` and `data/merged1_test.csv`.
+Before using the data as input to the KAN model, we preprocess the four power measurements using an n-sample sliding time window with stride length 1 to extract four time-series features for each measurement: mean, variance, skew, and kurtosis; for a total of **16 input features**. The datasets with these features are extracted using `data/data_preprocessing_new.py`.
 
 ## Citation
 
