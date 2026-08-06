@@ -169,7 +169,7 @@ def merge_and_modify_csvs(input_files, output_file, mapping):
 
 
 if __name__ == "__main__":
-    NUM_STEPS = 20
+    NUM_STEPS = 20  # Change this to change the window size
     TEST_RATIO = 0.2
     SEED = 42
 
@@ -200,9 +200,9 @@ if __name__ == "__main__":
         extract_data_sequence_features(f'windowed_test_{n}.csv',  f'features_test_{n}.csv',  NUM_STEPS)
 
     # Step 3: merge all groups, applying label mapping
-    merge_and_modify_csvs([f'features_train_{n}.csv' for n in range(10)], 'merged1_4thorder_train.csv', mapping)
-    merge_and_modify_csvs([f'features_test_{n}.csv'  for n in range(10)], 'merged1_4thorder_test.csv',  mapping)
+    merge_and_modify_csvs([f'features_train_{n}.csv' for n in range(10)], 'merged1_train.csv', mapping)    # Change output file name as needed
+    merge_and_modify_csvs([f'features_test_{n}.csv'  for n in range(10)], 'merged1_test.csv',  mapping)
 
     # # For raw-measurement datasets (no feature extraction)
-    merge_and_modify_csvs([f'windowed_train_{n}.csv' for n in range(10)], 'merged2_4thorder_train.csv', mapping)
-    merge_and_modify_csvs([f'windowed_test_{n}.csv'  for n in range(10)], 'merged2_4thorder_test.csv',  mapping)
+    merge_and_modify_csvs([f'windowed_train_{n}.csv' for n in range(10)], 'merged2_train.csv', mapping)    # Change output file name as needed
+    merge_and_modify_csvs([f'windowed_test_{n}.csv'  for n in range(10)], 'merged2_test.csv',  mapping)
